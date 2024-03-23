@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.uploadDataButton {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  bottom:20px;
+  z-index:2;
+}
+
+.landingPage {
+  height: 100%;
+}
