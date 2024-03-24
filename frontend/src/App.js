@@ -26,7 +26,7 @@ function App() {
     "Delta": [19, 21, 20, 26],
     "Langley": [7, 20, 20, 26],
     "White Rock": [8, 19, 20, 26],
-    "Vancouver": [6, 18, 20, 26]
+    "Vancouver": [10, 18, 20, 26]
   }
 
   const stackedChartData = [
@@ -47,17 +47,17 @@ function App() {
   const settings = {
     width: 200,
     height: 200,
-    value: Math.floor(Math.random() * (80 - 20 + 1)) + 20,
-  };
+    value: Math.floor(Math.random() * (80 - 20 + 1)) + 20, // Generates a random number between 20 and 80
+  };  
 
   return (
     <div className="app-container">
       <NavBar />
       <div className="contentContainer">
         <div className="chartContainer">
-          {clickLocation &&
+        {clickLocation &&
           <>
-            <h2>Number of Public Parks and Green Spaces</h2>
+            <h2>Presence of Public Parks and Green Spaces</h2>
             <BarChart
               xAxis={[{ scaleType: 'band', data: [clickLocation, 'Neighbor Average', 'Province Average', 'National Average'] }]}
               series={[
@@ -80,7 +80,7 @@ function App() {
                 }
               }}
             />
-            <h2>Number of Recreational Facilities</h2>
+            <h2>Presence of Recreational Facilities</h2>
             <BarChart
               xAxis={[
                   {
@@ -98,45 +98,40 @@ function App() {
               height={400}
             />
 
-          <h2>Investment in Sports Infrastructure (in millions)</h2>
+          <h2>Investment in Sports Infrastructure</h2>
           <LineChart
-            xAxis={[
-              { 
-                data: [2015, 2016, 2017, 2019, 2022, 2024],
-                valueFormatter: (value) => value.toString()
-              }
-            ]}
+            xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
             series={[
                 {
                   data: lineChartSeriesData[getRandomNum(lineChartSeriesData.length-1)],
                   color: '#ffa733',
-                  area: true
+                  area: true,
                 },
             ]}
             width={650}
             height={400}
             grid={{ vertical: true, horizontal: true }}
           />
-          <h2 className="accessScore">Acessibility Score</h2>
-          <div className="gaugeContainer">
-            <Gauge
-              {...settings}
-              cornerRadius="50%"
-              sx={(theme) => ({
-                [`& .${gaugeClasses.valueText}`]: {
-                  fontSize: 40,
-                },
-                [`& .${gaugeClasses.valueArc}`]: {
-                  fill: '#52b202',
-                },
-                [`& .${gaugeClasses.referenceArc}`]: {
-                  fill: theme.palette.text.disabled,
-                },
-              })}
-            />
-          </div>
-          </>
+        </>
         }
+        <h2>Acessibility Score</h2>
+        <div className="gaugeContainer">
+          <Gauge
+            {...settings}
+            cornerRadius="50%"
+            sx={(theme) => ({
+              [`& .${gaugeClasses.valueText}`]: {
+                fontSize: 40,
+              },
+              [`& .${gaugeClasses.valueArc}`]: {
+                fill: '#52b202',
+              },
+              [`& .${gaugeClasses.referenceArc}`]: {
+                fill: theme.palette.text.disabled,
+              },
+            })}
+          />
+        </div>
         </div>
         <MapObject setClickLocation={setClickLocation} className="map" />
       </div>
