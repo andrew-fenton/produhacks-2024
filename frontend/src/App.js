@@ -97,8 +97,7 @@ function App() {
                 {
                   data: lineChartSeriesData[getRandomNum(lineChartSeriesData.length-1)],
                   color: '#ffa733',
-                  area: true,
-                  bottomAxis: { axisId: "Title" }
+                  area: true
                 },
             ]}
             width={650}
