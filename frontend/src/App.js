@@ -3,6 +3,8 @@ import './App.css';
 import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 import BarChart from './components/BarChart';
+ import LineChart from './components/LineChart';
+ 
 
 function App() {
   const [clickLocation, setClickLocation] = useState("");
@@ -34,6 +36,7 @@ function App() {
         customLabels={['This City', 'Neighbor Average', 'Province Average', 'National Average']}
         chartTitle="Public Park & Green Spaces Comparison"
         />
+        <LineChart />
         </div>
         }
         <MapObject setClickLocation={setClickLocation} className="map" />
@@ -43,3 +46,4 @@ function App() {
 }
 
 export default App;
+
