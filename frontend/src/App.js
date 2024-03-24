@@ -4,7 +4,6 @@ import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
-import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
  
 
 function App() {
@@ -43,12 +42,6 @@ function App() {
     [13, 9, 8, 6, 7, 5],
     [11, 11, 12, 13, 12, 12]
   ]
-
-  const settings = {
-    width: 200,
-    height: 200,
-    value: Math.floor(Math.random() * (80 - 20 + 1)) + 20,
-  };
 
   return (
     <div className="app-container">
@@ -117,24 +110,6 @@ function App() {
             height={400}
             grid={{ vertical: true, horizontal: true }}
           />
-          <h2 className="accessScore">Acessibility Score</h2>
-          <div className="gaugeContainer">
-            <Gauge
-              {...settings}
-              cornerRadius="50%"
-              sx={(theme) => ({
-                [`& .${gaugeClasses.valueText}`]: {
-                  fontSize: 40,
-                },
-                [`& .${gaugeClasses.valueArc}`]: {
-                  fill: '#52b202',
-                },
-                [`& .${gaugeClasses.referenceArc}`]: {
-                  fill: theme.palette.text.disabled,
-                },
-              })}
-            />
-          </div>
           </>
         }
         </div>
