@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Map, {Marker} from 'react-map-gl';
 import PlaceIcon from '@mui/icons-material/Place';
+import '../style/MapObject.css'
 
 export default function MapObject({setClickLocation}) {
     const markers = [
@@ -27,7 +28,7 @@ export default function MapObject({setClickLocation}) {
             {markers.map((marker) => {
                 return (
                     <Marker latitude={marker[0]} longitude={marker[1]} onClick={() => setClickLocation(marker[2])}>
-                        <PlaceIcon />
+                        <PlaceIcon className='marker' />
                     </Marker>
                 );
             })};
