@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
-// import BarChart1 from './components/BarChart1';
 import { BarChart } from '@mui/x-charts/BarChart';
  import LineChart from './components/LineChart';
  
@@ -28,15 +27,8 @@ function App() {
     <div className="app-container">
       <NavBar />
       <div className="contentContainer">
-        <div className="barChartContainer">
-          {/* <BarChart1
-            customDataset={{
-              data: [18, 15, 20, 26], // Example data values for "This City", "Neighbor Average", "Province Average", "National Average"
-            }}
-            customLabels={['This City', 'Neighbor Average', 'Province Average', 'National Average']}
-            chartTitle="Public Park & Green Spaces Comparison"
-          /> */}
-          <div style={{ width: '100%' }}>
+        <div className="chartContainer">
+            <h5>Presence of Public Parks and Green Spaces</h5>
             <BarChart
               xAxis={[{ scaleType: 'band', data: ['This City', 'Neighbor Average', 'Province Average', 'National Average'] }]}
               series={[
@@ -59,7 +51,23 @@ function App() {
                 }
               }}
             />
-          </div>
+            <h2>Presence of Recreational Facilities</h2>
+            <BarChart
+              xAxis={[
+                  {
+                    scaleType: 'band',
+                    data: ['This City', 'Neighbor Average', 'Province Average', 'National Average']
+                  }
+              ]}
+              series={[
+                { data: [8,6,7,10], stack: 'A', label: 'Community Centers', color: '#FFD700' },
+                { data: [4, 3, 1, 5], stack: 'A', label: 'Gyms', color: '#FF5733' },
+                { data: [4, 2, 5, 4], stack: 'A', label: 'Swimming Pools', color: '#00BFFF' },
+                { data: [2, 8, 1, 3], stack: 'A', label: 'Sport Complexes', color: '#32CD32' },
+              ]}
+              width={650}
+              height={400}
+            />
         </div>
         <MapObject setClickLocation={setClickLocation} className="map" />
       </div>
