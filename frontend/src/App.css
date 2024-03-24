@@ -42,16 +42,18 @@
 }
 
 .contentContainer {
-  display:flex;
+  display: flex;
 }
 
 .chartContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border: 1px solid rgb(218, 216, 216);
   border-radius: 15px;
   margin-right: 2%;
   width: 44vw;
   margin-left: 2vw;
-  place-items: center;
   text-align: center;
   color: #327c86;
   overflow-y: scroll;
