@@ -81,7 +81,7 @@ function BarChart({ customDataset, customLabels, chartTitle }) {
 
   return (
     <div className="chart-container">
-      <canvas id="ctx"></canvas>
+      <canvas id="ctx" ></canvas>
     </div>
   );
 }

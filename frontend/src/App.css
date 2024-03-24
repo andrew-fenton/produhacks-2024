@@ -46,7 +46,7 @@
 }
 
 .barChartContainer {
-  border: 1px solid grey;
+  border: 1px solid rgb(221, 218, 218);
   border-radius: 15px;
   margin-right: 2%;
   width: 44vw;
