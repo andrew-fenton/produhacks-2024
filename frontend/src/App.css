@@ -45,7 +45,7 @@
   display:flex;
 }
 
-.barChartContainer {
+.chartContainer {
   border: 1px solid grey;
   border-radius: 15px;
   margin-right: 2%;
