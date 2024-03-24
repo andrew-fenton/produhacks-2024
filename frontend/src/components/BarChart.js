@@ -87,3 +87,4 @@ function BarChart({ customDataset, customLabels, chartTitle }) {
 }
 
 export default BarChart;
+

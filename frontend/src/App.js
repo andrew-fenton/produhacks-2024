@@ -3,6 +3,8 @@ import './App.css';
 import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 import BarChart from './components/BarChart';
+ import LineChart from './components/LineChart';
+ 
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
   chartTitle="Public Park & Green Spaces Comparison"
 />
     <MapObject />
+    <LineChart />
     </div>
   );
 }
 
 export default App;
+
