@@ -25,6 +25,7 @@ function App() {
     "Delta": [19, 21, 20, 26],
     "Langley": [7, 20, 20, 26],
     "White Rock": [8, 19, 20, 26],
+    "Vancouver": [6, 18, 20, 26]
   }
 
   const stackedChartData = [
@@ -47,9 +48,9 @@ function App() {
       <NavBar />
       <div className="contentContainer">
         <div className="chartContainer">
-        {clickLocation &&
+          {clickLocation &&
           <>
-            <h2>Presence of Public Parks and Green Spaces</h2>
+            <h2>Number of Public Parks and Green Spaces</h2>
             <BarChart
               xAxis={[{ scaleType: 'band', data: [clickLocation, 'Neighbor Average', 'Province Average', 'National Average'] }]}
               series={[
@@ -72,7 +73,7 @@ function App() {
                 }
               }}
             />
-            <h2>Presence of Recreational Facilities</h2>
+            <h2>Number of Recreational Facilities</h2>
             <BarChart
               xAxis={[
                   {
@@ -90,9 +91,14 @@ function App() {
               height={400}
             />
 
-          <h2>Investment in Sports Infrastructure</h2>
+          <h2>Investment in Sports Infrastructure (in millions)</h2>
           <LineChart
-            xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+            xAxis={[
+              { 
+                data: [2015, 2016, 2017, 2019, 2022, 2024],
+                valueFormatter: (value) => value.toString()
+              }
+            ]}
             series={[
                 {
                   data: lineChartSeriesData[getRandomNum(lineChartSeriesData.length-1)],

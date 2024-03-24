@@ -11,7 +11,8 @@ export default function MapObject({setClickLocation}) {
         [49.281876, -122.794220, "Coquitlam"],
         [49.106371, -122.660839, "Langley"],
         [49.091533, -123.028455, "Delta"],
-        [49.026965, -122.802483, "White Rock"]
+        [49.026965, -122.802483, "White Rock"],
+        [49.262778, -123.114444, "Vancouver"]
     ];
 
     return (
