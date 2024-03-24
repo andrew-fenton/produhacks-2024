@@ -54,7 +54,7 @@ function NavBar() {
       <div className="switch">
         <Stack direction="row" spacing={1} alignItems="center" justifyContent="flex-end">
           <Typography>Basic</Typography>
-          <AntSwitch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+          <AntSwitch sx={{ transform: "scale(1.2)" }} defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
           <Typography>Advanced</Typography>
         </Stack>
       </div>
