@@ -4,7 +4,6 @@ import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
-import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
  
 
 function App() {
