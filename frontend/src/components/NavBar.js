@@ -51,13 +51,13 @@ function NavBar() {
   
   return (
     <div className="navBarContainer">
-      <div className="switch">
+      {/* <div className="switch">
         <Stack direction="row" spacing={1} alignItems="center" justifyContent="flex-end">
           <Typography>Basic</Typography>
           <AntSwitch sx={{ transform: "scale(1.2)" }} defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
           <Typography>Advanced</Typography>
         </Stack>
-      </div>
+      </div> */}
       <h1>Canada Wellness Map</h1>
     </div>
   );
