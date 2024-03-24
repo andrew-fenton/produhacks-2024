@@ -15,13 +15,13 @@ function App() {
   }, [clickLocation]);
 
   const barChartData = {
-    "surrey": [18, 15, 20, 26],
-    "coquitlam": [9, 13, 20, 26],
-    "burnaby": [11, 12, 20, 26],
-    "richmond": [21, 15, 20, 26],
-    "delta": [19, 21, 20, 26],
-    "langley": [7, 20, 20, 26],
-    "white rock": [8, 19, 20, 26],
+    "Surrey": [18, 15, 20, 26],
+    "Coquitlam": [9, 13, 20, 26],
+    "Burnaby": [11, 12, 20, 26],
+    "Richmond": [21, 15, 20, 26],
+    "Delta": [19, 21, 20, 26],
+    "Langley": [7, 20, 20, 26],
+    "White Rock": [8, 19, 20, 26],
   }
 
   return (
@@ -37,10 +37,11 @@ function App() {
             chartTitle="Public Park & Green Spaces Comparison"
           /> */}
           <div style={{ width: '100%' }}>
+            {clickLocation &&
             <BarChart
-              xAxis={[{ scaleType: 'band', data: ['This City', 'Neighbor Average', 'Province Average', 'National Average'] }]}
+              xAxis={[{ scaleType: 'band', data: [clickLocation, 'Neighbor Average', 'Province Average', 'National Average'] }]}
               series={[
-                { data: [4, 8, 9, 3] }
+                { data: barChartData[clickLocation] }
               ]}
               width={650}
               height={400}
@@ -59,6 +60,7 @@ function App() {
                 }
               }}
             />
+            }
           </div>
         </div>
         <MapObject setClickLocation={setClickLocation} className="map" />
