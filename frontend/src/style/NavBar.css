@@ -2,7 +2,8 @@
     color: #64CCDA;
     justify-content: center;
     align-items: center;
-    margin-top:2%;
+    margin-top:2vw;
+    margin-bottom: 2vw;
 }
 
 .navBarContainer h1 {
