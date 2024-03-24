@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-function BarChart({ customDataset, customLabels, chartTitle }) {
+function BarChart1({ customDataset, customLabels, chartTitle }) {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -86,5 +86,5 @@ function BarChart({ customDataset, customLabels, chartTitle }) {
   );
 }
 
-export default BarChart;
+export default BarChart1;
 
