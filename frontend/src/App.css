@@ -51,4 +51,17 @@
   margin-right: 2%;
   width: 44vw;
   margin-left: 2vw;
+  place-items: center;
+  text-align: center;
+  color: #327c86;
+}
+
+.chartContainer h5 {
+  margin-top: 15px;
+  margin-bottom:0;
+  font-size: 16px;
+}
+
+.chartContainer h2 {
+  font-size: 16px;
 }
