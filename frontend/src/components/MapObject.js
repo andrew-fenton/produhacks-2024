@@ -17,7 +17,7 @@ export default function MapObject() {
                 longitude: -123.2489,
                 zoom: 15
             }}
-            style={{width: "50vw", height: "95vh", borderRadius: "25px"}}
+            style={{width: "50vw", height: "95vh", borderRadius: "25px", rightMargin:"2vw"}}
             mapStyle="mapbox://styles/mapbox/streets-v9"
         >
             <Marker latitude={49.2617} longitude={-123.2489} onClick={() => handleMarkerClick("ICCS")}>
