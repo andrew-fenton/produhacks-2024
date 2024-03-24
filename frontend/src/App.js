@@ -5,15 +5,9 @@ import Button from '@mui/material/Button';
 
 function App() {
   return (
-      <div className="landingPage">
-        <NavBar />
-        <Button 
-          className="uploadDataButton" 
-          size="large" 
-          variant="contained"> 
-          Upload Data 
-          </Button>
-      </div>
+    <div className="app-container">
+      <NavBar />
+    </div>
   );
 }
 
