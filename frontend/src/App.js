@@ -4,6 +4,8 @@ import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 // import BarChart1 from './components/BarChart1';
 import { BarChart } from '@mui/x-charts/BarChart';
+ import LineChart from './components/LineChart';
+ 
 
 function App() {
   const [clickLocation, setClickLocation] = useState("");
@@ -11,6 +13,16 @@ function App() {
   useEffect(() => {
     console.log(clickLocation);
   }, [clickLocation]);
+
+  const barChartData = {
+    "surrey": [18, 15, 20, 26],
+    "coquitlam": [9, 13, 20, 26],
+    "burnaby": [11, 12, 20, 26],
+    "richmond": [21, 15, 20, 26],
+    "delta": [19, 21, 20, 26],
+    "langley": [7, 20, 20, 26],
+    "white rock": [8, 19, 20, 26],
+  }
 
   return (
     <div className="app-container">
