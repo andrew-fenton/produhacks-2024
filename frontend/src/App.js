@@ -5,7 +5,9 @@ import MapObject from './components/MapObject';
 function App() {
   return (
     <div className="App">
-      <MapObject />
+      <div className='mainContainer'>
+        <MapObject />
+      </div>
     </div>
   );
 }
