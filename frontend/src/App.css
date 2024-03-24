@@ -46,7 +46,7 @@
 }
 
 .chartContainer {
-  border: 1px solid grey;
+  border: 1px solid rgb(218, 216, 216);
   border-radius: 15px;
   margin-right: 2%;
   width: 44vw;
@@ -54,6 +54,8 @@
   place-items: center;
   text-align: center;
   color: #327c86;
+  overflow-y: scroll;
+  height: 95vh;
 }
 
 .chartContainer h5 {
