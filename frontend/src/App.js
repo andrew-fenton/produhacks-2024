@@ -4,6 +4,8 @@ import MapObject from './components/MapObject';
 import NavBar from './components/NavBar';
 import { BarChart } from '@mui/x-charts/BarChart';
 import { LineChart } from '@mui/x-charts/LineChart';
+import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
+
  
 
 function App() {
@@ -111,9 +113,7 @@ function App() {
             height={400}
             grid={{ vertical: true, horizontal: true }}
           />
-        </>
-        }
-        <h2>Acessibility Score</h2>
+          <h2>Acessibility Score</h2>
         <div className="gaugeContainer">
           <Gauge
             {...settings}
@@ -131,6 +131,8 @@ function App() {
             })}
           />
         </div>
+        </>
+        }
         </div>
         <MapObject setClickLocation={setClickLocation} className="map" />
       </div>
