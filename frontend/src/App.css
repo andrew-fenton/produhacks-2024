@@ -40,3 +40,15 @@
 .mainContainer {
   display: flex;
 }
+
+.contentContainer {
+  display:flex;
+}
+
+.barChartContainer {
+  border: 1px solid grey;
+  border-radius: 15px;
+  margin-right: 2%;
+  width: 44vw;
+  margin-left: 2vw;
+}
