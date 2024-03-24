@@ -5,13 +5,13 @@ import '../style/MapObject.css'
 
 export default function MapObject({setClickLocation}) {
     const markers = [
-        [49.253600, -122.982614, "burnaby"],
-        [49.166592, -123.133568, "richmond"],
-        [49.194751, -122.848482, "surrey"],
-        [49.281876, -122.794220, "coquitlam"],
-        [49.106371, -122.660839, "langley"],
-        [49.091533, -123.028455, "delta"],
-        [49.026965, -122.802483, "white rock"]
+        [49.253600, -122.982614, "Burnaby"],
+        [49.166592, -123.133568, "Richmond"],
+        [49.194751, -122.848482, "Surrey"],
+        [49.281876, -122.794220, "Coquitlam"],
+        [49.106371, -122.660839, "Langley"],
+        [49.091533, -123.028455, "Delta"],
+        [49.026965, -122.802483, "White Rock"]
     ];
 
     return (
