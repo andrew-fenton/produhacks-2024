@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-function StackedBarChart({ customDataset, customLabels, chartTitle }) {
+function BarChart({ customDataset, customLabels, chartTitle }) {
   const chartRef = useRef(null);
 
   useEffect(() => {
@@ -86,4 +86,4 @@ function StackedBarChart({ customDataset, customLabels, chartTitle }) {
   );
 }
 
-export default StackedBarChart;
+export default BarChart;
