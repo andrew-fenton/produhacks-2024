@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 // import BarChart1 from './components/BarChart1';
 import { BarChart } from '@mui/x-charts/BarChart';
  import LineChart from './components/LineChart';
+import LineGraph from './components/LineGraph';
  
 
 function App() {
@@ -43,8 +44,8 @@ function App() {
               series={[
                 { data: barChartData[clickLocation] }
               ]}
-              width={650}
-              height={400}
+              width={500}
+              height={300}
               sx={{
                 "& .MuiBarElement-root:nth-child(1)": {
                   fill: "#3498DB", // Blue
@@ -61,6 +62,7 @@ function App() {
               }}
             />
             }
+            <LineGraph />
           </div>
         </div>
         <MapObject setClickLocation={setClickLocation} className="map" />
