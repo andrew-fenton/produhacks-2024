@@ -46,7 +46,7 @@
 }
 
 .chartContainer {
-  border: 1px solid grey;
+  border: 1px solid #CCCCCC;
   border-radius: 15px;
   margin-right: 2%;
   width: 44vw;
