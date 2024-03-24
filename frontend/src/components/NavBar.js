@@ -58,7 +58,7 @@ function NavBar() {
           <Typography>Advanced</Typography>
         </Stack>
       </div>
-      <h1>MOCKUP NAME</h1>
+      <h1>Canada Wellness Map</h1>
     </div>
   );
 }
