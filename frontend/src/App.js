@@ -16,7 +16,6 @@ function App() {
   return (
     <div className="app-container">
       <NavBar />
-      <LineChart />
       <div className="contentContainer">
         <div className="barChartContainer">
         <BarChart
@@ -26,8 +25,9 @@ function App() {
         customLabels={['This City', 'Neighbor Average', 'Province Average', 'National Average']}
         chartTitle="Public Park & Green Spaces Comparison"
         />
+        <LineChart />
         </div>
-          <MapObject setClickLocation={setClickLocation} className="map" />
+        <MapObject setClickLocation={setClickLocation} className="map" />
       </div>
     </div>
   );
