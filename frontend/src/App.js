@@ -77,7 +77,7 @@ function App() {
                 { data: stackedChartData[getRandomNum(stackedChartData.length - 1)], stack: 'A', label: 'Community Centers', color: '#FFD700' },
                 { data: stackedChartData[getRandomNum(stackedChartData.length - 1)], stack: 'A', label: 'Gyms', color: '#FF5733' },
                 { data: stackedChartData[getRandomNum(stackedChartData.length - 1)], stack: 'A', label: 'Swimming Pools', color: '#00BFFF' },
-                { data: stackedChartData[getRandomNum(stackedChartData.length - 1)], stack: 'A', label: 'Sport Complexes', color: '#32CD32' },
+                { data: stackedChartData[getRandomNum(stackedChartData.length - 1)], stack: 'A', label: 'Sport Complexes', color: '#32CD32' }
               ]}
               width={650}
               height={400}
